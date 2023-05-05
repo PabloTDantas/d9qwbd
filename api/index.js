@@ -279,7 +279,7 @@ route.get('/nome/:nome',limiter, async (req, res) => {
 route.get('/rg/:rg',limiter, async (req, res) => {
   try {
     const rg = req.params.rg;
-    const response = await axios.get(`https://wlrd.live/rg/${rg}?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21lIjoicGVpeG90byIsImlhdCI6MTY4MjUzNTg4NSwiZXhwIjoxNjg0NzgyMjg1fQ.xR4BBkOWPEtJVdwX_txfrIEYwyfnzWLI0mYSsoGxupQ
+    const response = await axios.get(`https://p7api.xyz/Puxluk2/cns/${rg}
 `);
     return res.json(response.data);
   } catch (error) {
