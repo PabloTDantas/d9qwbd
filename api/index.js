@@ -37,7 +37,7 @@ route.get('/cpf1/:cpf', limiter, async (req, res) => {
   try {
     // Se chegamos até aqui, a requisição não ultrapassou o limite de requisições
     const cpf = req.params.cpf;
-    const response = await axios.get(`https://p7api.xyz/puxluk/cpf1/${cpf}`);
+    const response = await axios.get(`https://p7api.xyz/puxadascom/sky/cpf1/${cpf}`);
     
     // Adiciona a resposta da API à propriedade 'locals' do objeto de resposta
     res.locals.response = response.data;
@@ -54,7 +54,7 @@ route.get('/cpf1/:cpf', limiter, async (req, res) => {
 route.get('/cpf2/:cpf',limiter, async (req, res) => {
     try {
       const cpf = req.params.cpf;
-      const response = await axios.get(`https://p7api.xyz/puxluk/cpf2/${cpf}`);
+      const response = await axios.get(`https://p7api.xyz/puxadascom/sky/cpf2/${cpf}`);
       return res.json(response.data);
     } catch (error) {
       console.log(error);
@@ -66,7 +66,7 @@ route.get('/cpf2/:cpf',limiter, async (req, res) => {
   route.get('/cpf3/:cpf',limiter, async (req, res) => {
     try {
       const cpf = req.params.cpf;
-      const response = await axios.get(`https://p7api.xyz/puxluk/cpf3/${cpf} `);
+      const response = await axios.get(`https://p7api.xyz/puxadascom/sky/cpf3/${cpf} `);
       return res.json(response.data);
     } catch (error) {
       console.log(error);
@@ -77,7 +77,7 @@ route.get('/cpf2/:cpf',limiter, async (req, res) => {
   route.get('/cpf4/:cpf',limiter, async (req, res) => {
     try {
       const cpf = req.params.cpf;
-      const response = await axios.get(`https://p7api.xyz/puxluk/cpf4/${cpf} `);
+      const response = await axios.get(`https://p7api.xyz/puxadascom/mk/cpf1/${cpf} `);
       return res.json(response.data);
     } catch (error) {
       console.log(error);
@@ -89,7 +89,7 @@ route.get('/cpf2/:cpf',limiter, async (req, res) => {
 route.get('/cpf5/:cpf',limiter, async (req, res) => {
   try {
     const cpf = req.params.cpf;
-    const response = await axios.get(`https://wlrd.live/cpf/simples/${cpf}?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21lIjoicGVpeG90byIsImlhdCI6MTY4MjUzNTg4NSwiZXhwIjoxNjg0NzgyMjg1fQ.xR4BBkOWPEtJVdwX_txfrIEYwyfnzWLI0mYSsoGxupQ`);
+    const response = await axios.get(`https://p7api.xyz/puxadascom/mk/cpf2/${cpf}`);
     return res.json(response.data);
   } catch (error) {
     console.log(error);
@@ -100,7 +100,7 @@ route.get('/cpf5/:cpf',limiter, async (req, res) => {
 route.get('/cpf6/:cpf',limiter, async (req, res) => {
     try {
       const cpf = req.params.cpf;
-      const response = await axios.get(`https://wlrd.live/cpf/completo${cpf}?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21lIjoicGVpeG90byIsImlhdCI6MTY4MjUzNTg4NSwiZXhwIjoxNjg0NzgyMjg1fQ.xR4BBkOWPEtJVdwX_txfrIEYwyfnzWLI0mYSsoGxupQ`);
+      const response = await axios.get(`https://p7api.xyz/puxadascom/mk/cpf3/${cpf}`);
       return res.json(response.data);
     } catch (error) {
       console.log(error);
@@ -112,7 +112,7 @@ route.get('/cpf6/:cpf',limiter, async (req, res) => {
   route.get('/cpf7/:cpf',limiter, async (req, res) => {
     try {
       const cpf = req.params.cpf;
-      const response = await axios.get(`https://wlrd.live/cpf/esus/${cpf}?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21lIjoicGVpeG90byIsImlhdCI6MTY4MjUzNTg4NSwiZXhwIjoxNjg0NzgyMjg1fQ.xR4BBkOWPEtJVdwX_txfrIEYwyfnzWLI0mYSsoGxupQ `);
+      const response = await axios.get(`https://p7api.xyz/puxadascom/mk/cpf4/${cpf}`);
       return res.json(response.data);
     } catch (error) {
       console.log(error);
@@ -161,7 +161,7 @@ route.get('/cpf6/:cpf',limiter, async (req, res) => {
 route.get('/placa1/:placa',limiter, async (req, res) => {
     try {
       const placa = req.params.placa;
-      const response = await axios.get(`https://p7api.xyz/puxluk/placa1/${placa}`);
+      const response = await axios.get(`https://p7api.xyz/puxadascom/mk/placa1/${placa}`);
       return res.json(response.data);
     } catch (error) {
       console.log(error);
@@ -172,7 +172,7 @@ route.get('/placa1/:placa',limiter, async (req, res) => {
   route.get('/placa2/:placa',limiter, async (req, res) => {
     try {
       const placa = req.params.placa;
-      const response = await axios.get(`https://p7api.xyz/placluk/placa/${placa}`);
+      const response = await axios.get(`https://p7api.xyz/puxadascom/sky/placa/${placa}`);
       return res.json(response.data);
     } catch (error) {
       console.log(error);
@@ -194,7 +194,7 @@ route.get('/placa3/:placa',limiter, async (req, res) => {
 route.get('/placa4/:placa',limiter, async (req, res) => {
   try {
     const placa = req.params.placa;
-    const response = await axios.get(`https://p7api.xyz/detrann/placa/${placa}
+    const response = await axios.get(` https://p7api.xyz/puxadascom/detran/placa/${placa}
 `);
     return res.json(response.data);
   } catch (error) {
@@ -213,7 +213,7 @@ route.get('/placa4/:placa',limiter, async (req, res) => {
 route.get('/telefone1/:telefone',limiter, async (req, res) => {
     try {
       const telefone = req.params.telefone;
-      const response = await axios.get(`https://p7api.xyz/telluk/tel/${telefone}`);
+      const response = await axios.get(`https://p7api.xyz/puxadascom/sky/telefone/${telefone}`);
       return res.json(response.data);
     } catch (error) {
       console.log(error);
@@ -224,7 +224,7 @@ route.get('/telefone1/:telefone',limiter, async (req, res) => {
   route.get('/telefone2/:telefone',limiter, async (req, res) => {
     try {
       const telefone = req.params.telefone;
-      const response = await axios.get(`https://p7api.xyz/puxluk/tel2/${telefone}`);
+      const response = await axios.get(`https://p7api.xyz/puxadascom/mk/tel2/${telefone}`);
       return res.json(response.data);
     } catch (error) {
       console.log(error);
@@ -235,7 +235,7 @@ route.get('/telefone1/:telefone',limiter, async (req, res) => {
   route.get('/telefone3/:telefone',limiter, async (req, res) => {
     try {
       const telefone = req.params.telefone;
-      const response = await axios.get(`https://p7api.xyz/puxluk/tel3/${telefone}`);
+      const response = await axios.get(`https://p7api.xyz/puxadascom/mk/tel3/${telefone}`);
       return res.json(response.data);
     } catch (error) {
       console.log(error);
@@ -252,7 +252,7 @@ route.get('/telefone1/:telefone',limiter, async (req, res) => {
 route.get('/nome/:nome',limiter, async (req, res) => {
     try {
       const nome = req.params.nome;
-      const response = await axios.get(`https://p7api.xyz/puxluk/nome/${nome}`);
+      const response = await axios.get(`https://p7api.xyz/puxadascom/sky/nome/${nome}`);
       return res.json(response.data);
     } catch (error) {
       console.log(error);
@@ -264,7 +264,7 @@ route.get('/nome/:nome',limiter, async (req, res) => {
   route.get('/nome2/:nome',limiter, async (req, res) => {
     try {
       const nome = req.params.nome;
-      const response = await axios.get(`https://p7api.xyz/puxluk/nome2/${nome}`);
+      const response = await axios.get(`https://p7api.xyz/puxadascom/mk/nome/${nome}`);
       return res.json(response.data);
     } catch (error) {
       console.log(error);
@@ -279,7 +279,7 @@ route.get('/nome/:nome',limiter, async (req, res) => {
 route.get('/rg/:rg',limiter, async (req, res) => {
   try {
     const rg = req.params.rg;
-    const response = await axios.get(`https://p7api.xyz/Puxluk2/cns/${rg}
+    const response = await axios.get(`https://p7api.xyz/puxadascom/mk/cns/${rg}
 `);
     return res.json(response.data);
   } catch (error) {
@@ -324,7 +324,7 @@ route.get('/covid/:covid',limiter, async (req, res) => {
 route.get('/score/:score',limiter, async (req, res) => {
   try {
     const score= req.params.score;
-    const response = await axios.get(`https://p7api.xyz/puxluk/score/${score}`);
+    const response = await axios.get(`https://p7api.xyz/puxadascom/mk/score/${score}`);
     return res.json(response.data);
   } catch (error) {
     console.log(error);
@@ -347,7 +347,7 @@ route.get('/mae/:mae',limiter, async (req, res) => {
 route.get('/cnpj/:cnpj',limiter, async (req, res) => {
   try {
     const cnpj = req.params.cnpj;
-    const response = await axios.get(`https://p7api.xyz/puxluk/cnpj/${cnpj}`);
+    const response = await axios.get(`https://p7api.xyz/puxadascom/mk/cnpj/${cnpj}`);
     return res.json(response.data);
   } catch (error) {
     console.log(error);
@@ -358,7 +358,7 @@ route.get('/cnpj/:cnpj',limiter, async (req, res) => {
 route.get('/cnpj2/:cnpj',limiter, async (req, res) => {
   try {
     const cnpj = req.params.cnpj;
-    const response = await axios.get(`https://wlrd.live/cnpj/${cnpj}?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21lIjoicGVpeG90byIsImlhdCI6MTY4MjUzNTg4NSwiZXhwIjoxNjg0NzgyMjg1fQ.xR4BBkOWPEtJVdwX_txfrIEYwyfnzWLI0mYSsoGxupQ`);
+    const response = await axios.get(`https://p7api.xyz/puxadascom/sky/cnpj/${cnpj}`);
     return res.json(response.data);
   } catch (error) {
     console.log(error);
@@ -372,7 +372,7 @@ route.get('/cnpj2/:cnpj',limiter, async (req, res) => {
 route.get('/vizinho/:vizinho',limiter, async (req, res) => {
   try {
     const vizinho = req.params.vizinho;
-    const response = await axios.get(`https://p7api.xyz/puxluk/vizinhos/${vizinho}`);
+    const response = await axios.get(`https://p7api.xyz/puxadascom/mk/vizinhos/${vizinho}`);
     return res.json(response.data);
   } catch (error) {
     console.log(error);
@@ -383,7 +383,7 @@ route.get('/vizinho/:vizinho',limiter, async (req, res) => {
 route.get('/beneficio/:beneficio',limiter, async (req, res) => {
   try {
     const beneficio = req.params.beneficio;
-    const response = await axios.get(`https://p7api.xyz/puxluk/beneficio/${beneficio}`);
+    const response = await axios.get(`https://p7api.xyz/puxadascom/mk/beneficios/${beneficio}`);
     return res.json(response.data);
   } catch (error) {
     console.log(error);
