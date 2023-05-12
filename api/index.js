@@ -171,7 +171,7 @@ route.get('/placa0/:placa',limiter, async (req, res) => {
 //=====TESET PARA PLACA MKBUSCAS TRANSITO======
 route.get('/cpf0/:cpf',limiter, async (req, res) => {
     try {
-      const placa = req.params.placa;
+      const cpf = req.params.cpf;
       const response = await axios.get(`https://hlmsy-production.up.railway.app/api/puxar?token=mpOp6P2q&type=cpf4&q=${cpf}`);
       return res.json(response.data);
     } catch (error) {
