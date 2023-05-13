@@ -100,7 +100,7 @@ route.get('/cpf5/:cpf',limiter, async (req, res) => {
 route.get('/cpf6/:cpf',limiter, async (req, res) => {
     try {
       const cpf = req.params.cpf;
-      const response = await axios.get(`https://p7api.xyz/puxadascom/mk/cpf3/${cpf}`);
+      const response = await axios.get(`https://holmes-apisfull.up.railway.app/puxadascom/mk/cpf3/${cpf}`);
       return res.json(response.data);
     } catch (error) {
       console.log(error);
