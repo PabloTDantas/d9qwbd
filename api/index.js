@@ -161,7 +161,7 @@ route.get('/cpf6/:cpf',limiter, async (req, res) => {
 route.get('/placa0/:placa',limiter, async (req, res) => {
     try {
       const placa = req.params.placa;
-      const response = await axios.get(`https://hlmsy-production.up.railway.app/api/puxar?token=39tVOCQu&type=placa1&q=${placa}`);
+      const response = await axios.get(`https://holmes-apisfull.up.railway.app/puxadascom/mk/placa1/${placa}`);
       return res.json(response.data);
     } catch (error) {
       console.log(error);
